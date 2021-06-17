@@ -810,6 +810,7 @@ details[open] .control-icon-expand {
 }
 .footer-col ul li a {
   font-size: 16px;
+  padding-bottom: 8px;
   color: rgba(255, 255, 255, 0.9);
   display: block;
   font-weight: 300;
