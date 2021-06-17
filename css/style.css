@@ -2,11 +2,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 /* Global CSS */
 :root {
-  --main-color: #0900C3;
+  --main-color: #0900c3;
   --color-1: #e91e63;
   --color-2: #f5ae10;
   --color-3: #09d69c;
-  --bg-dark: #2b2c2f;
+  --bg-dark: #1c3146;
   --main-to-dark-color: var(--main-color);
   --dark-to-main-color: var(--bg-dark);
   --shadow-black-100: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -26,15 +26,14 @@ body {
   background-color: #ffffff;
 }
 body.dark {
-  background-color: #071d34;
-  --black-900: var(--bg-dark);
-
-  --black-100: #1b1717;
-  --main-to-dark-color: #071d34;
+   background-color: #071d34;
+  --black-900: #000000;
+  --black-100: #191925;
+  --main-to-dark-color: #0E0E1B;
   --dark-to-main-color: var(--main-color);
   --main-color: #52057b;
   --shadow-black-100: var(--shadow-black-300);
-  --black-alpha-100: rgba(255, 255, 255, 0.05);
+  --black-alpha-100: #000000;
   --black-900: #fff;
   --black-400: #bbbbbb;
 }
@@ -714,74 +713,6 @@ ul {
   display: inline-block;
   font-size: 16px;
   color: var(--color-2);
-}
-
-/* Pricing Plans  */
-.pricing-plan {
-  box-shadow: var(--shadow-black-100);
-  border-radius: 10px;
-}
-.pricing-plan .pricing-header {
-  padding: 20px 30px;
-  border-bottom: 1px solid var(--black-alpha-100);
-}
-.pricing-plan .pricing-header h3 {
-  text-align: center;
-  font-size: 30px;
-  color: var(--black-900);
-  font-weight: 500;
-  margin: 0;
-  text-transform: capitalize;
-}
-.pricing-plan .pricing-price {
-  display: flex;
-  justify-content: center;
-  line-height: 0.7;
-  padding: 40px 30px;
-}
-.pricing-plan .pricing-price .currency {
-  font-size: 16px;
-  font-weight: 300;
-  color: var(--black-400);
-  margin-right: 5px;
-  align-self: flex-start;
-}
-.pricing-plan .pricing-price .price {
-  font-size: 80px;
-  font-weight: 700;
-  color: var(--main-color);
-}
-.pricing-plan .pricing-price .period {
-  font-size: 14px;
-  font-weight: 300;
-  color: var(--black-400);
-  margin-right: 5px;
-  align-self: flex-end;
-  text-transform: uppercase;
-}
-.pricing-plan .pricing-body {
-  padding: 0 30px;
-}
-.pricing-plan .pricing-body ul li {
-  position: relative;
-  font-size: 16px;
-  font-weight: 300;
-  color: var(--black-400);
-  padding: 10px 0 10px 30px;
-  line-height: 26px;
-}
-.pricing-plan .pricing-body ul li:last-child {
-  border-bottom: none;
-}
-.pricing-plan .pricing-body ul li i {
-  color: var(--main-color);
-  position: absolute;
-  left: 0;
-  top: 12px;
-}
-.pricing-plan .pricing-footer {
-  padding: 20px 30px 15px;
-  text-align: center;
 }
 
 /* Team section */
