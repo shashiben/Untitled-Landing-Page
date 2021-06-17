@@ -68,7 +68,7 @@ $(document).ready(function () {
     },
   });
   // Testimonial Carousel
-  $(".testimonials-carousel").owlCarousel({
+  $(".special-carousel").owlCarousel({
     loop: true,
     margin: 0,
     dots: true,
@@ -79,10 +79,10 @@ $(document).ready(function () {
         items: 1,
       },
       600: {
-        items: 2,
+        items: 1,
       },
       1000: {
-        items: 3,
+        items: 1,
       },
     },
   });
@@ -115,41 +115,4 @@ $(document).ready(function () {
   $(".nav-link").on("click", function () {
     $(".navbar-collapse").collapse("hide");
   });
-
-  //For Theme switch icon
-  function toggleTheme() {
-    if (localStorage.getItem("theme") !== null) {
-      if (localStorage.getItem("theme") !== "dark") {
-        $("body").removeClass("dark");
-      } else {
-        $("body").addClass("dark");
-      }
-    }
-    updateIcon();
-  }
-  toggleTheme();
-  $(".toggle-theme").on("click", function () {
-    if ($("body").hasClass("dark")) {
-      localStorage.setItem("theme", "dark");
-    } else {
-      localStorage.setItem("theme", "light");
-    }
-    updateIcon();
-  });
-  function updateIcon() {
-    if (localStorage.getItem("theme") === null) {
-      localStorage.setItem("theme", "light");
-      $("body").removeClass("dark");
-    } else {
-      if ($("body").hasClass("dark")) {
-        $(".toggle-theme i").removeClass("fa-moon");
-        $(".toggle-theme i").addClass("fa-sun");
-        $("body").removeClass("dark");
-      } else {
-        $(".toggle-theme i").removeClass("fa-sun");
-        $(".toggle-theme i").addClass("fa-moon");
-        $("body").addClass("dark");
-      }
-    }
-  }
 });

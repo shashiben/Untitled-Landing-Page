@@ -25,18 +25,7 @@ body {
   line-height: 1.5;
   background-color: #ffffff;
 }
-body.dark {
-   background-color: #071d34;
-  --black-900: #000000;
-  --black-100: #191925;
-  --main-to-dark-color: #0E0E1B;
-  --dark-to-main-color: var(--main-color);
-  --main-color: #52057b;
-  --shadow-black-100: var(--shadow-black-300);
-  --black-alpha-100: #000000;
-  --black-900: #fff;
-  --black-400: #bbbbbb;
-}
+
 * {
   margin: 0;
   padding: 0;
@@ -481,67 +470,10 @@ ul {
   margin: 0 0 15px;
 }
 
-/* Fun Facts */
-.fun-facts {
+/* ScreenShot Sections */
+.app-screenshots {
   background-color: var(--black-100);
 }
-.fun-fact-img img {
-  max-width: 250px;
-  width: 100%;
-  box-shadow: var(--shadow-black-100);
-  border-radius: 32px;
-  animation: bounceTop_01 5s ease infinite;
-}
-.fun-facts .section-title {
-  margin-bottom: 20px;
-}
-.fun-facts .section-title h2 {
-  text-align: left;
-}
-.fun-facts-text p {
-  font-size: 16px;
-  line-height: 26px;
-  font-weight: 300;
-  color: var(--black-400);
-  margin: 0 0 15px;
-}
-.fun-fact-item {
-  padding: 30px;
-  text-align: center;
-  box-shadow: var(--shadow-black-100);
-  border-radius: 10px;
-  margin-top: 30px;
-}
-.fun-fact-item h3 {
-  font-size: 40px;
-  font-weight: 700;
-  color: #fff;
-  margin: 0 0 8px;
-}
-.fun-fact-item span {
-  font-size: 16px;
-  font-weight: 300;
-  color: #fff;
-  margin: 0;
-  text-transform: uppercase;
-  line-height: 26px;
-  display: block;
-}
-
-.fun-fact-item.style-1 {
-  background-color: var(--color-1);
-}
-.fun-fact-item.style-2 {
-  background-color: var(--color-2);
-}
-.fun-fact-item.style-3 {
-  background-color: var(--color-3);
-}
-.fun-fact-item.style-4 {
-  background-color: var(--main-color);
-}
-
-/* ScreenShot Sections */
 .screenshot-item {
   margin: 15px;
 }
@@ -649,76 +581,33 @@ ul {
   line-height: 26px;
 }
 
-/* Testimonials */
-.testimonials {
+/* Specials */
+.special {
   background-color: var(--black-100);
 }
-.testimonial-item {
+.special-item {
   margin: 15px;
-  padding: 30px;
-  box-shadow: var(--shadow-black-100);
+  padding: 20px;
   border-radius: 10px;
   text-align: center;
 }
-.testimonial-item .img-box {
-  height: 100px;
-  width: 100px;
-  display: inline-block;
-  border: 4px solid var(--main-color);
-  margin-bottom: 30px;
-  border-radius: 50%;
-  position: relative;
+.special-item .item-img {
+  max-width: 250px;
+  width: 75%;
+  border-radius: 32px;
 }
-.testimonial-item .img-box img {
-  border-radius: 50%;
-  width: 100%;
+.special-item .special-text h1 {
+  padding-bottom: 20px;
+  text-align: start;
 }
-.testimonial-item .img-box i {
-  position: absolute;
-  height: 30px;
-  width: 30px;
-  background-color: var(--main-color);
-  border-radius: 50%;
-  color: #fff;
-  font-size: 12px;
-  line-height: 30px;
-  text-align: center;
-  left: calc(100% - 15px);
-  top: calc(50% - 15px);
-}
-.testimonial-item p {
-  font-size: 16px;
-  margin: 0 0 20px;
-  color: var(--black-400);
-  line-height: 26px;
+.special-item .special-text ul {
+  padding-bottom: 20px;
+  text-align: start;
   font-weight: 300;
+  list-style: circle;
 }
-.testimonial-item h3 {
-  font-size: 22px;
-  color: var(--black-900);
-  font-weight: 500;
-  margin: 0 0 5px;
-  text-transform: capitalize;
-}
-.testimonial-item .img-box span {
-  display: block;
-  font-size: 16px;
-  color: var(--black-400);
-  font-weight: 300;
-}
-.testimonial-item .rating {
-  margin-top: 10px;
-}
-.testimonial-item .rating i {
-  display: inline-block;
-  font-size: 16px;
-  color: var(--color-2);
-}
-
 /* Team section */
-.team {
-  background-color: var(--black-100);
-}
+
 .team-item {
   margin: 15px;
   padding: 15px;
@@ -741,7 +630,9 @@ ul {
 }
 
 /* FAQ section */
-
+.faq {
+  background-color: var(--black-100);
+}
 details {
   width: 100%;
   min-height: 5px;
@@ -833,9 +724,7 @@ details[open] .control-icon-expand {
 }
 
 /* Contact */
-.contact {
-  background-color: var(--black-100);
-}
+
 .contact h3 {
   font-size: 22px;
   color: var(--black-900);
@@ -897,7 +786,7 @@ details[open] .control-icon-expand {
 /* Footers */
 .footer {
   background-color: var(--main-color);
-  padding: 50px 0;
+  padding-top: 50px;
 }
 .footer-col h3 {
   font-size: 20px;
@@ -939,31 +828,6 @@ details[open] .control-icon-expand {
   font-weight: 300;
   margin: 50px 0 0;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-/* Theme Switcher */
-.toggle-theme {
-  position: fixed;
-  right: 0;
-  top: calc(50% - 20px);
-  color: #fff;
-  padding-right: 10px;
-  padding-left: 10px;
-  font-size: 16px;
-  text-align: center;
-  height: 40px;
-  width: 40px;
-  right: 40px;
-  border-radius: 50%;
-  background-color: var(--dark-to-main-color);
-  z-index: 1200;
-  cursor: pointer;
-  box-shadow: var(--shadow-black-300);
-
-  border-top: 1px solid rgba(255, 255, 255, 0.2);
-}
-.toggle-theme i {
-  line-height: 40px;
 }
 
 /* For Responsive */
